@@ -1,4 +1,4 @@
-from factions.fractions import Fraction
+from fractions.fractions import Fraction
 
 
 def test_zero_plus_zero():
