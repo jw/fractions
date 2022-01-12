@@ -23,6 +23,9 @@ class Fraction:
     def __str__(self):
         return f"{self.numerator} / {self.denominator}"
 
+    def __repr__(self):
+        return self.__str__()
+
     def _reduce(self):
         g = math.gcd(self.numerator, self.denominator)
         if self.denominator < 0:
