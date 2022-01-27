@@ -4,6 +4,8 @@ import math
 class Fraction:
     def __init__(self, numerator: int = 1, denominator: int = 1):
         self.numerator = numerator
+        if denominator == 0:
+            raise ZeroDivisionError
         self.denominator = denominator
         self._reduce()
 
